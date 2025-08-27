@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Peserta Kursus</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Peserta Kursus</h2>
+    <form action="/submit" method="post">
+        <!-- Informasi Pribadi -->
+        <fieldset>
+            <legend>Informasi Pribadi</legend>
+
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telp">Nomor Telepon:</label><br>
+            <input type="number" id="telp" name="telp" required><br><br>
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>
+            <label for="laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+            <label for="perempuan">Perempuan</label><br><br>
+        </fieldset>
+
+        <!-- Informasi Pendidikan -->
+        <fieldset>
+            <legend>Pendidikan</legend>
+
+            <label for="pendidikan">Tingkat Pendidikan:</label><br>
+            <select id="pendidikan" name="pendidikan" required>
+                <option value="">--Pilih--</option>
+                <option value="SMA">SMA</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Sarjana">Sarjana</option>
+                <option value="Magister">Magister</option>
+            </select><br><br>
+
+            <label for="sekolah">Nama Sekolah/Universitas:</label><br>
+            <input type="text" id="sekolah" name="sekolah" required><br><br>
+        </fieldset>
+
+        <!-- Hobi dan Minat -->
+        <fieldset>
+            <legend>Hobi dan Minat</legend>
+
+            <label>Pilih hobi yang kamu sukai:</label><br>
+            <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+            <label for="olahraga">Olahraga</label><br>
+            <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+            <label for="musik">Musik</label><br>
+            <input type="checkbox" id="gaming" name="hobi[]" value="Gaming">
+            <label for="gaming">Gaming</label><br>
+            <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+            <label for="membaca">Membaca</label><br><br>
+
+            <label for="minat">Minat Utama:</label><br>
+            <select id="minat" name="minat" required>
+                <option value="">--Pilih--</option>
+                <option value="Teknologi">Teknologi</option>
+                <option value="Seni">Seni</option>
+                <option value="Olahraga">Olahraga</option>
+                <option value="Bisnis">Bisnis</option>
+            </select><br><br>
+        </fieldset>
+
+        <!-- Pengalaman Kerja -->
+        <fieldset>
+            <legend>Pengalaman Kerja</legend>
+
+            <label for="perusahaan">Nama Perusahaan:</label><br>
+            <input type="text" id="perusahaan" name="perusahaan"><br><br>
+
+            <label for="posisi">Posisi:</label><br>
+            <input type="text" id="posisi" name="posisi"><br><br>
+
+            <label for="durasi">Durasi Bekerja (tahun):</label><br>
+            <input type="number" id="durasi" name="durasi" min="0"><br><br>
+        </fieldset>
+
+        <input type="submit" value="Kirim Formulir">
+        <input type="reset" value="Kirim ">
+    </form>
+</body>
+</html>

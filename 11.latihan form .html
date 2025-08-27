@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Membuat formulir</h3>
+    <form>
+        <fieldset>
+            <label for="namalengkap">Nama Lengkap</label><br>
+            <input id="namalengkap" type="email" name="Nama" placeholder="masukan nama lengkap"><br><br>
+
+            <label for="email">Email</label><br>
+            <input id="email" type="text" name="email" required><br><br>
+
+            <label>Jenis Kelamin</label><br>
+            <label for="laki-laki">Laki-laki</label>
+            <input id="laki-laki" type="radio" name="jk" value="Laki-laki">
+
+            <label for="Perempuan">perempuan</label>
+            <input id="Perempuan" type="radio" name="jk" value="Perempuan"><br><br>
+
+            <label>Hobi</label><br>
+            <label for="Membaca">Membaca</label>
+            <input id="Membaca" type="checkbox" name="hobi" value="Membaca">
+
+            <label for="Olahraga">Olahraga</label>
+            <input id="Olahraga" type="checkbox" name="hobi" value="Olahraga">
+
+            <label for="Traveling">Traveling</label>
+            <input id="Traveling" type="checkbox" name="hobi" value="Traveling"><br><br>
+
+            <label for="paket_seminar">Paket seminar</label>
+            <select name="paket_seminar" id="paket_seminar">
+                <option value="reguler">Reguler</option>
+                <option value="Premium">Premium</option>
+                <option value="VIP">VIP</option>
+                </select><br><br>
+
+                <button id="submit" type="submit">Submit</button>
+            
+
+        </fieldset>
+    </form>
+</body>
+</html>

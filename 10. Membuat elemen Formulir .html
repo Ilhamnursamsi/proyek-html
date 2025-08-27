@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+
+    <!--Elemen input dengan type text-->
+    <label for="nama">Nama Lengkap</label><br>
+    <input id="nama" type="text" name="Nama" placeholder="Masukan Nama Lengkap"><br>
+
+    <label for="nim">NIM</label><br>
+    <input id="name" type="text" name="Nim" required><br>
+    
+    <label for="email">Email</label><br>
+    <input id="email" type="text" name="email" required><br><br>
+    
+    <!--Elemen input dengan type radio-->
+    <!--MEMBERI JUDUL UMUM -->
+    <label>Jenis Kelamin</label><br>
+
+    <label for="laki">Laki-laki</label>
+    <input id="laki" type="radio" name="js" value="laki-laki"><br>
+
+    <label for="Perempuan">Perempuan</label>
+    <input id="Perempuan" type="radio" name="js" value="Perempuan"><br><br>
+
+    <!--Elemen section dan Option-->
+    <label for="prodi">Program Studi</label>
+    <select id="prodi" name="prodi">
+      <option value="TI">Teknik Informatika</option>
+      <option value="SI">Sistem Informasi</option>
+      <option value="TE">Teknik Elektro</option>
+      <option value="KA">Komputerisasi Akuntansi</option>
+      <option value="MA">Manajemen Komputer</option>
+      <option value="Akuntan">Akuntansi</option>
+      <option value="MTK">Matematika</option>
+      <option value="MTK P">Matematika Peminatan</option>
+      <option value="Manajemen">Ekonomi Manajemen</option>
+      <option value="Teknik Mesin">Teknik Mesin</option>
+      <option value="Kimia">Kimia</option>
+      <option value="Fisia">Fisika</option>
+      <option value="Geografi">Geografi</option>
+      <option value="Bahasa Inggris">Bahasa Inggris</option>
+      <option value="Teknik Geologi">Teknik Geologi</option>
+      <option value="Teknik Sipil">Teknik Sipil</option>
+    </select><br><br>
+    
+    <!--Elemen Text area-->
+    <label for="alamat">Alamat</label>
+    <textarea id="alamat" name="alamat" cols="30" rows="10"></textarea><br><br>
+
+    <!--Elemen Button-->
+    <button type="submit">Submit</button>
+</fieldset>
+  </form>
+  
+</body>
+</html>

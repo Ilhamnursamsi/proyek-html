@@ -1,0 +1,53 @@
+{
+    // Zoom dan ukuran font
+    "window.zoomLevel": 1,
+    "editor.fontSize": 14,
+
+    // Matikan preview prediksi (blok hijau)
+    "editor.suggest.preview": false,
+    "editor.inlineSuggest.enabled": false,
+
+    // Matikan semantic highlighting
+    "editor.semanticHighlighting.enabled": false,
+
+    // Matikan highlight pasangan tag / simbol
+    "editor.occurrencesHighlight": "off",
+    "editor.selectionHighlight": false,
+
+    // Matikan indikator Git (garis biru/hijau/merah di samping nomor baris)
+    "scm.diffDecorations": "none",
+    "editor.guides.indentation": false,
+    "editor.guides.highlightActiveIndentation": false,
+
+    // Matikan line highlight
+    "editor.renderLineHighlight": "none",
+
+    // Opsional: matikan minimap
+    "editor.minimap.enabled": false
+
+    
+    // Aktifkan warna untuk pasangan tanda kurung
+    "editor.bracketPairColorization.enabled": true,
+
+    // Selalu tampilkan highlight pasangan tanda kurung / tag
+    "editor.matchBrackets": "always",
+
+    // Aktifkan highlight pasangan tag HTML
+    "html.mirrorCursorOnMatchingTag": true,
+
+    // Tampilkan garis panduan untuk struktur kode (indentation guide)
+    "editor.guides.bracketPairs": true,
+
+    // Aktifkan warna berbeda untuk tag pembuka dan penutup
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+    // Warna untuk pasangan tag
+    "workbench.colorCustomizations": 
+        "editorBracketHighlight.foreground1": "#FF6B6B",
+        "editorBracketHighlight.foreground2": "#FFD93D",
+        "editorBracketHighlight.foreground3": "#6BCB77",
+        "editorBracketHighlight.foreground4": "#4D96FF"
+
+
+
+}

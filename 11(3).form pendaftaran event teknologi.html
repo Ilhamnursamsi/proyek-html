@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Event Teknologi</title>
+</head>
+<body>
+    <form action="proses.php" method="post">
+
+        <h2>FORMULIR PENDAFTARAN EVENT TEKNOLOGI</h2><br>
+        <fieldset>
+        <legend>Deskripsi Singkat</legend>
+        <p>formulir ini dibuat untuk menjadi syarat utama bagi para peserta</p>
+        <p>yang mengikuti Event Teknologi, dengan adanya formulir ini dibuat kami </p>
+        <p>pihak penyelenggara berharapa para pendaftar mengisi formulir ini dengan</p>
+        <p>baik dan benar agar tim kami menerima informasi pendaftar dengan valid dan</p>
+        <p>terstruktur ketika dikikirim didatabase</p><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Data Pribadi</legend>
+            
+            <label for="nama">Nama Lengkap</label><br>
+            <input id="nama" type="text" name="nama_lengkap" placeholder="Masukan Nama Lengkap Anda"><br><br>
+
+            <label for="email">Email</label><br>
+            <input id="email" type="email" name="email" required><br><br>
+
+            <label for="No">Nomor Telepon</label><br>
+            <input id="No" type="tel" name="No.tlp" pattern="\d{10-13}"><br><br>
+
+            <label for="ttl">Tempat Tanggal Lahir</label><br>
+            <input id="ttl" type="date" name="ttl" required placeholder="Tempat Tanggal Lahir"><br><br>
+
+            <label>Jenis Kelamin</label><br>
+            <label for="lalaki">Laki-laki</label>
+            <input id="lalaki" type="radio" name="gender" value="laki-laki">
+
+            <label for="Perempuan">Perempuan</label
+            <input id="Perempuan" type="radio" name="gender" value="Perempuan"><br><br>
+
+            <label for="pendidikan">Pilihan Pendidikan</label>
+            <select id="pedidikan" name="pendidikan terakhir">
+                <option value="SMA">SMA/SMK</option>
+                <option value="D3">D3</option>
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+            </select><br><br>
+
+            <label>Keahlian</label><br>
+
+            <label for="programer">Programing</label>
+            <input  id="programer" type="checkbox" name="keahlian" value="programing">
+
+            <label for="desain">Desain</label>
+            <input id="desain" type="checkbox" name="keahlian" value="desain">
+
+            <label for="Jaringan">Jarigan</label>
+            <input id="Jaringan" type="checkbox" name="keahlian" value="Jaringan">
+
+            <label for="data">Data</label>
+            <input id="data" type="checkbox" name="keahlian" value="Data">
+
+            <label for="analyst">Analyst</label>
+            <input id="analyst" type="checkbox" name="keahlian" value="Analyst">
+
+            <label for="ai">AI</label>
+            <input id="ai" type="checkbox" name="keahlian" value="AI"><br><br>
+
+            <label for="alamat">Alamat</label><br>
+            <textarea id="alamat" name="alamat" placeholder="masukan alamat anda" required cols="10" rows="5"></textarea>
+
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Upload File</legend>
+            <label>Upload file</label><br>
+
+            <label for="jpg">JPG</label>
+            <input id="jpg" type="file" name="file" value="jpg">
+
+            <label for="png">PNG</label>
+            <input id="png" type="file" name="file" value="png">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Waktu</legend>
+            <label for="waktu">waktu kehadiran</label>
+            <input id="waktu" type="time" name="waktu hadir" required><br>
+
+            <label for="warna">Color</label>
+            <input id="warna" type="color" name="color" placeholder="masukan warna" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Tombol Form</legend>
+            <button type="submit">Submit</button>
+            <button type="Reset">Reset</button>
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

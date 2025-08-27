@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Contoh ID dan Class</title>
+<style>
+/* Styling untuk ID (unik) */
+#header {
+  background-color: lightblue;
+  text-align: center;
+  padding: 10px;
+}
+
+#main-content {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Styling untuk Class (bisa berulang) */
+.menu-item {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #ddd;
+}
+
+.tulisan {
+  color: red;
+  font-weight: bold;
+}
+
+.box {
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px 0;
+}
+</style>
+</head>
+<body>
+
+<!-- ID hanya untuk satu elemen -->
+<div id="header">
+  <h1 class="tulisan">Judul Website</h1>
+</div>
+
+<div id="main-content">
+  <p class="tulisan">Ini paragraf dengan class highlight</p>
+  <p>Ini paragraf biasa</p>
+
+  <!-- Class bisa berulang -->
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box tulisan">Box 3 (diberi highlight)</div>
+</div>
+
+<!-- Menu dengan class yang sama -->
+<nav>
+  <a href="#" class="menu-item">Home</a>
+  <a href="#" class="menu-item">Produk</a>
+  <a href="#" class="menu-item tulisan box">Kontak</a>
+</nav>
+
+</body>
+</html>
